@@ -1,0 +1,29 @@
+body{
+  background-color: $color-2;
+}
+
+main{
+  position: relative; 
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -70px;
+    width: 187px;
+    height: 170px;
+    background: url("img/folha.svg") no-repeat center center;
+    background-size: contain;
+    z-index: -1;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -70px;
+    width: 250px;
+    height: 270px;
+    background: url("img/shapes.svg") no-repeat center center;
+    background-size: contain;
+    z-index: -1;
+  }
+}

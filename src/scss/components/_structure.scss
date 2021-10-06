@@ -1,0 +1,31 @@
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+  header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img{
+      margin-bottom: 15px;
+      max-width: 180px;
+    }
+  }
+
+  .list-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li{
+      &:not(:last-of-type){
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

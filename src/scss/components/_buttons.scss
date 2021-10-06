@@ -1,0 +1,59 @@
+.btn{
+  background-color: $color-1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 240px;
+  height: 55px;
+  color: $white;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba($color-1, 0.29);
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  padding-left: 65px;
+  position: relative;
+  &:hover{
+    background-color: $color-3;
+    box-shadow: 0 3px 6px rgba($color-3, 0.29);
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    background-size: contain;
+  }
+  &--facebook{
+    &::before{
+      background: url("img/facebook.svg") no-repeat center center;
+    }
+  }
+  &--instagram{
+    &::before{
+      background: url("img/instagram.svg") no-repeat center center;
+    }
+  }
+  &--whatsapp{
+    &::before{
+      background: url("img/whatsapp.svg") no-repeat center center;
+    }
+  }
+  &--email{
+    &::before{
+      background: url("img/email.svg") no-repeat center center;
+    }
+  }
+  &--catalogo{
+    &::before{
+      background: url("img/magazine.svg") no-repeat center center;
+      height: 23px;
+    }
+  }
+
+}
